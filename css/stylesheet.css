@@ -39,4 +39,25 @@ nav {
   border-radius: 25px;
   padding: 0.5rem 2rem 0.5rem 2rem;
 }
+/* desktop */
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: yellow;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    position: static;
+  }
+}
+
 /* end nav styling */
