@@ -24,6 +24,7 @@ nav {
 }
 .main-nav {
   /* off by default */
+  display: none;
   position: absolute;
   top: 120px;
   width: 90%;
