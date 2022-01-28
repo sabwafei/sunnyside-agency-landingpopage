@@ -1,11 +1,36 @@
 /* coded by SabWaFei */
-/* used for styling */
-body {
-  background-color: pink;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+/* global */
+:root {
+  --clr-sft-red: hsl(7, 99%, 70%);
+  --clr-yellow: hsl(51, 100%, 49%);
+  --clr-gph-text: hsl(167, 40%, 24%);
+  --clr-photo-text: hsl(198, 62%, 26%);
+  --clr-footer: hsl(168, 34%, 41%);
+  --clr-drk-desat-blu: hsl(212, 27%, 19%);
+  --clr-drk-gry-blu: hsl(213, 9%, 39%);
+  --clr-gry-blu: hsl(210, 4%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-fraunces: "Fraunces", serif;
+  --fw-fr-bold: 700;
+  --fw-fr-bolder: 900;
 }
+body {
+  font-size: 18px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* end global */
+
 /* nav styling */
 nav {
-  background-color: pink;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -19,7 +44,7 @@ nav {
   content: " ";
   width: 0;
   height: 0;
-  border-bottom: 40px solid blue;
+  border-bottom: 40px solid white;
   border-left: 40px solid transparent;
   position: absolute;
   top: -40px;
@@ -32,15 +57,22 @@ nav {
   top: 120px;
   width: 90%;
   text-align: center;
-  background-color: pink;
+  background-color: var(--clr-white);
 }
 .main-nav > li {
   padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+}
+.main-nav li a {
+  color: var(--clr-drk-gry-blu);
+  font-family: var(--ff-barlow);
 }
 .main-nav button {
   border: none;
   border-radius: 25px;
   padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: var(--clr-yellow);
+  color: black;
+  font-family: var(--ff-fraunces);
 }
 /* desktop */
 @media only screen and (min-width: 769px) {
@@ -62,29 +94,14 @@ nav {
     position: static;
   }
 }
-
 /* end nav styling */
-/* hero section styling */
-.hero-section {
-  margin-top: 2rem;
-  padding-bottom: 10rem;
-  text-align: center;
-  position: relative;
+
+/* header hero section */
+header {
+  background-image: url(/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 500px;
 }
-.hero-section::after {
-  /* using before to place background image perfectly */
-  content: "";
-  background: url(/images/mobile/image-header.jpg) no-repeat center/cover;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.hero-section img {
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* end hero section styling */
+/* end hero section */
