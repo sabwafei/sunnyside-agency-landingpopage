@@ -20,6 +20,8 @@
 body {
   font-size: 18px;
 }
+.main-container {
+}
 section {
   display: flex;
   flex-direction: column;
@@ -75,10 +77,7 @@ nav {
   font-family: var(--ff-fraunces);
 }
 /* desktop */
-@media only screen and (min-width: 769px) {
-  body {
-    background-color: yellow;
-  }
+@media only screen and (min-width: 620px) {
   .hamburger-menu {
     display: none;
   }
@@ -118,5 +117,20 @@ header {
   font-weight: var(--fw-fr-bold);
   color: var(--clr-white);
   margin: 4.5rem 0 3rem 0;
+}
+/* desktop */
+@media only screen and (min-width: 620px) {
+  body {
+    background-color: yellow;
+  }
+  header {
+    background-image: url(/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .hero h1 {
+    margin: 4.5rem 0 9rem 0;
+  }
 }
 /* end hero section */
