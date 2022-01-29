@@ -20,23 +20,21 @@
 body {
   font-size: 18px;
 }
-.main-container {
-}
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-h1 {
-  font-size: 2.5rem;
-  font-family: var(--ff-fraunces);
-}
 h2 {
   font-size: 1.2rem;
   font-family: var(--ff-fraunces);
 }
-
+/* desktop images hidden by default */
+.img-dsktp-transfrom,
+.img-dsktp-stand-out {
+  display: none;
+}
 /* end global */
 
 /* nav styling */
@@ -85,7 +83,7 @@ nav {
   font-family: var(--ff-fraunces);
 }
 /* desktop */
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 700px) {
   .hamburger-menu {
     display: none;
   }
@@ -126,7 +124,7 @@ header {
   margin: 4.5rem 0 3rem 0;
 }
 /* desktop */
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 700px) {
   body {
   }
   header {
@@ -141,13 +139,14 @@ header {
 }
 /* end hero section */
 
-/* info section */
-.services {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+/* services section */
 .block {
-  padding-bottom: 2rem;
+  height: 400px;
+}
+.block-header {
+  font-size: 2rem;
+  font-family: var(--ff-fraunces);
+  font-weight: var(--fw-fr-bolder);
 }
 .info {
   text-align: center;
@@ -156,6 +155,7 @@ header {
 .info p {
   color: var(--clr-drk-gry-blu);
   font-family: var(--ff-barlow);
+  line-height: 1.8;
 }
 .info a {
   font-family: var(--ff-fraunces);
@@ -193,4 +193,50 @@ header {
 .info > * {
   margin-bottom: 2rem;
 }
-/* end info section */
+.image-one {
+  background-image: url(/images/mobile/image-transform.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.image-two {
+  background-image: url(/images/mobile/image-stand-out.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+@media only screen and (min-width: 700px) {
+  .block {
+    height: 650px;
+  }
+  .image-one {
+    background-image: url(/images/desktop/image-transform.jpg);
+  }
+  .image-two {
+    background-image: url(/images/desktop/image-stand-out.jpg);
+  }
+  .services-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .order-1 {
+    order: 2;
+  }
+  .order-2 {
+    order: 1;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20% 0 20%;
+  }
+  .info h2 {
+    font-weight: var(--fw-fr-bolder);
+    width: 30%;
+    text-align: left;
+  }
+  .info p {
+    text-align: left;
+  }
+}
+/* end services section */
