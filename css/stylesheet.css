@@ -135,6 +135,9 @@ header {
   }
   .hero h1 {
     margin: 4.5rem 0 9rem 0;
+    font-size: 2.5rem;
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-fr-bolder);
   }
 }
 /* end hero section */
@@ -262,6 +265,16 @@ header {
   }
   .info p {
     text-align: left;
+  }
+  .combo-1 {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+  }
+  .combo-2 {
+    background-image: url(/images/desktop/image-photography.jpg);
+  }
+  .combo-1 p,
+  .combo-2 p {
+    width: 60%;
   }
 }
 /* end services section */
