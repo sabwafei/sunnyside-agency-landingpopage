@@ -141,7 +141,7 @@ header {
 
 /* services section */
 .block {
-  height: 400px;
+  height: 475px;
 }
 .block-header {
   font-size: 2rem;
@@ -150,7 +150,7 @@ header {
 }
 .info {
   text-align: center;
-  padding: 2rem;
+  padding: 8rem 2rem 2rem 2rem;
 }
 .info p {
   color: var(--clr-drk-gry-blu);
@@ -203,6 +203,31 @@ header {
   background-size: cover;
   background-position: center center;
 }
+.combo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.combo-1 {
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.combo-1 p,
+.combo-2 p {
+  margin-top: 1rem;
+  line-height: 1.5;
+  width: 95%;
+  text-align: center;
+}
+.combo-2 {
+  background-image: url(/images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
 @media only screen and (min-width: 700px) {
   .block {
     height: 650px;
