@@ -391,7 +391,13 @@ header {
 
 /* footer section */
 footer {
+  padding-top: 3rem;
   background-color: var(--clr-footer);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 .logo-2 {
   height: 1.5rem;
@@ -401,8 +407,19 @@ footer {
 .logo-2 {
   -webkit-mask-image: url("/images/logo.svg");
 }
+.secondary-nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
 .secondary-nav ul li a {
   color: var(--clr-gph-text);
   font-family: var(--ff-barlow);
+}
+.social-links {
+  padding: 4rem 0;
+}
+.social-links ul {
+  display: flex;
+  gap: 1.5rem;
 }
 /* end footer section */
