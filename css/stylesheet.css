@@ -144,7 +144,7 @@ header {
 
 /* services section */
 .block {
-  height: 475px;
+  height: 480px;
 }
 .block-header {
   font-size: 2rem;
@@ -342,3 +342,49 @@ header {
   }
 }
 /* end testimonial section */
+
+/* collage section */
+.collage {
+  margin-top: 4rem;
+}
+.collage-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+.collage-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 42.5% 10%;
+}
+.img-one {
+  background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+}
+.img-two {
+  background-image: url(/images/mobile/image-gallery-orange.jpg);
+}
+.img-three {
+  background-image: url(/images/mobile/image-gallery-cone.jpg);
+}
+.img-four {
+  background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+}
+@media only screen and (min-width: 700px) {
+  .collage-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .img-one {
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+  }
+  .img-two {
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+  }
+  .img-three {
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+  }
+  .img-four {
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
+/* end collage section */
