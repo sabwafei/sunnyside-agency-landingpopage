@@ -388,3 +388,21 @@ header {
   }
 }
 /* end collage section */
+
+/* footer section */
+footer {
+  background-color: var(--clr-footer);
+}
+.logo-2 {
+  height: 1.5rem;
+  width: 7.7rem;
+  background-color: var(--clr-gph-text);
+}
+.logo-2 {
+  -webkit-mask-image: url("/images/logo.svg");
+}
+.secondary-nav ul li a {
+  color: var(--clr-gph-text);
+  font-family: var(--ff-barlow);
+}
+/* end footer section */
