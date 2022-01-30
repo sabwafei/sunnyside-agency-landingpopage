@@ -423,3 +423,16 @@ footer {
   gap: 1.5rem;
 }
 /* end footer section */
+
+/* attrition section */
+.attribution {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  background-color: lightblue;
+  padding: 1em 0;
+}
+.attribution a {
+  color: blue;
+}
+/* end attrition section */
